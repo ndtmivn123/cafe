@@ -1,0 +1,16 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-13"
+            ],
+            "body": [
+                "banner/b-1",
+                "boxes/b-16",
+                "slider/s-1",
+                "boxes/b-8",
+                "boxes/b-9"
+            ]
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-banner-1
+	height: 750px
+	position: relative
+	z-index: 200
+	.item
+		position: relative
+		height: 750px
+		&:focus
+			outline: none 
+		min-height: 280px
+		+media-breakpoint-up(sm)
+			min-height: 320px
+		+media-breakpoint-up(md)
+			min-height: 360px
+		+media-breakpoint-up(lg)
+			min-height: 380px
+		.title
+			+pos(abs, null null 3rem 0)
+			width: 100%
+			+pad(0 1rem)
+			h1
+				color: color-get($mau,trang)
+				+text-sha(1px 1px 3px rgba(0,0,0,.4))
+				+fz(4.5rem)
+			span
+				+fz(2.5rem)
+				color: color-get($mau,trang)
+				position: relative
+				&:before
+					content: ''
+					display: block
+					width: 170%
+					height: .5px
+					opacity: .8
+					position: absolute
+					bottom: 0
+					left: 0
+					background: color-get($mau,trang)
+			p
+				color: color-get($mau,trang)
+				+text-sha(2px 2px 3px rgba(0,0,0,.2))
+				+fz(1.5rem)
+				+lh(1.8rem)
+				+fw(300)
+				// +media-breakpoint-up(md)
+				// 	max-width: 50%
+				// 	margin: 0 auto 1rem auto
