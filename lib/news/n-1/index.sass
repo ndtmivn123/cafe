@@ -3,7 +3,7 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-boxes-16
+.news
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
@@ -11,13 +11,13 @@
 		position: relative
 
 		.h2-text,span
-			+fz(4rem)
+			+fz(2rem)
 			+fw(700)
 			+lh(1)
 			margin-top: r(20px)
 		p
 			+pad(1rem)
-			margin-bottom: 5rem
+			margin-bottom: 2rem
 			+media-breakpoint-up(md)
 				+pad(2rem)
 		&:before
@@ -45,17 +45,16 @@
 				+media-breakpoint-up(lg)
 					max-width: 600px
 				h3
-					+pad(2rem 1rem)
+					+pad(1rem 1rem 0 1rem)
 					+fz(1.5rem)
 					+fw(500)
 				blockquote
 					font-style: italic
-					margin-top: 1rem
 					position: relative
 					line-height: 1.5rem
 					display: inline-flex
 					margin-bottom: 0
-					+pad(0 4rem)
+					+pad(1.5rem 1rem)
 					&:after, &:before
 						content: ''
 						display: inline-block
@@ -65,6 +64,11 @@
 						height: 2rem
 						width: 2rem
 						color: darken(color-get($mau,trang),35%)
+				.btn.btn-primary
+					background: none;
+					color: #41bd7d;
+					margin-top: 1rem;
+					border-color: #41bd7d
 					
 				.author
 					span
